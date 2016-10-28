@@ -1,34 +1,16 @@
-#minicalculator
+## **MINI CALCULATOR**
  _____________________
  
-|  _________________  |
+ Mini Calculator download link:
+ 
+ [Lab12.jar](https://mega.nz/#!fE9x1DwA!TLVV6d_NxT8Do-TQi4FdpgxlH2-xhuPjd675u3CCpoE)
+ 
+ A simple calculator made from scratch mimicking the UI of Apple's trademark calculator.
+ 
+![Mini Calculator]({{site.baseurl}}/calculator/Untitled.png)
 
-| |              0. | |
 
-| |_________________| |
-
-|  ___ ___ ___   ___  |
-
-| | AC|+/-| % | | ÷ | |
-
-| |___|___|___| |___| |
-
-| | 7 | 8 | 9 | | x | |
-
-| |___|___|___| |___| |
-
-| | 4 | 5 | 6 | | - | |
-
-| |___|___|___| |___| |
-
-| | 1 | 2 | 3 | | + | |
-
-| |___|___|___| |___| |
-
-| | 0 |   | . | | = | |
-
-| |___|___|___| |___| |
-
-|_____________________|
-
-ascii artwork originally by Jeremy J. Olson
+ 
+ 
+ 
+ 
