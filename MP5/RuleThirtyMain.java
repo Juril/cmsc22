@@ -16,10 +16,10 @@ public class RuleThirtyMain {
         RuleThirty rule1 = new RuleThirty(size1);
         endTime = System.currentTimeMillis();
         long result = endTime - startTime;
-        System.out.println("Time consumed in non-threaded: " + result + "ms");
         startTime = System.currentTimeMillis();
         RuleThirtyThreaded rule2 = new RuleThirtyThreaded(size1);
         endTime = System.currentTimeMillis();
+        System.out.println("Time consumed in non-threaded: " + result + "ms");
         System.out.println("Time consumed in threaded: " + (endTime - startTime) + "ms");
     }
 }
