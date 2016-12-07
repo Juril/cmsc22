@@ -18,23 +18,20 @@ public class RuleThirtyRun extends Thread{
         //System.out.println("length:" + grid.length);
         if(start!=0) start-=1;
         for (int row = start + 1; row < end; row++) {
-            for (int col = 0; col < grid.length - 1; col++) {
+            for (int col = 0; col < grid.length; col++) {
                 if (col - 1 < 0) {
                     if ((grid[row - 1][col] == 1 && grid[row - 1][col + 1] == 1) || (grid[row - 1][col] == 1 && grid[row - 1][col + 1] == 0) || (grid[row - 1][col] == 0 && grid[row - 1][col + 1] == 1)) {
                         grid[row][col] = 1;
-                        //System.out.println("LALALALA");
                     }
                 }
-                if (col + 1 == end) {
+                if (col + 1 == grid.length) {
                     if ((grid[row - 1][col] == 0 && grid[row - 1][col - 1] == 1) || (grid[row - 1][col] == 1 && grid[row - 1][col - 1] == 0)) {
                         grid[row][col] = 1;
-                       // System.out.println("WTFFFF");
                     }
                 }
-                if (col - 1 >= 0 && col + 1 != end) {
+                if (col - 1 >= 0 && col + 1 != grid.length) {
                     if ((grid[row - 1][col - 1] == 1 && grid[row - 1][col] == 0 && grid[row - 1][col + 1] == 0) || (grid[row - 1][col - 1] == 0 && grid[row - 1][col] == 1 && grid[row - 1][col + 1] == 1) || (grid[row - 1][col - 1] == 0 && grid[row - 1][col] == 1 && grid[row - 1][col + 1] == 0) || (grid[row - 1][col - 1] == 0 && grid[row - 1][col] == 0 && grid[row - 1][col + 1] == 1)) {
                         grid[row][col] = 1;
-                        //System.out.println("SAON JUD");
                     }
 
                 }
