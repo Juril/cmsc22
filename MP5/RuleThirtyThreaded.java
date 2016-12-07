@@ -18,7 +18,7 @@ public class RuleThirtyThreaded {
 
         int workersPerThread = size / THREAD_COUNT;
         int start = 0;
-        int end = start + workersPerThread - 1;
+        int end = (start + workersPerThread) -1;
 
         for (int i = 0; i < THREAD_COUNT; i++) {
             if (i == THREAD_COUNT - 1) {
